@@ -1,10 +1,8 @@
 [profile.default]
 solc_version = "0.8.33"
 evm_version = "prague"
-
 optimizer = true
-optimizer_runs = 20
-
+optimizer_runs = 99999
 via_ir = true
 
 fs_permissions = [{ access = "read", path = "./" }]
@@ -13,7 +11,8 @@ remappings = [
   "@solady=lib/solady/",
   "@soledge=lib/soledge/",
   "@forge=lib/forge-std/src/",
-  "@zamm=lib/ZAMM/src/"
+  "@zamm=lib/ZAMM/src/",
+  "@proquint=lib/proquint.eth/src/"
 ]
 
 [profile.via-ir]
